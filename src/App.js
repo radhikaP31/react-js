@@ -4,11 +4,15 @@ import './App.css';
 import FunctionComponent from './components/FunctionComponent';
 import ClassComponent from './components/ClassComponent';
 import JSXClass from './components/JSXClass';
+import StateComponent from './components/StateComponent';
+import SetState from './components/SetState';
 
 function App() {
   return (
     <div className="App">
-      <FunctionComponent name="Peater" heroName="Spiderman">
+      <SetState/>
+      {/* <StateComponent/> */}
+      {/* <FunctionComponent name="Peater" heroName="Spiderman">
         <p>Spiderman is a marvel hero.</p>
       </FunctionComponent>
       <FunctionComponent name="Brush" heroName="Batman">
@@ -17,7 +21,7 @@ function App() {
       <FunctionComponent name="Tony" heroName="Ironman"/>
       <ClassComponent name="Peater" heroName="Spiderman" />
       <ClassComponent name="Brush" heroName="Batman" />
-      <ClassComponent name="Tony" heroName="Ironman" />
+      <ClassComponent name="Tony" heroName="Ironman" /> */}
       {/* <JSXClass/> */}
     </div>
   );
