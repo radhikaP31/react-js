@@ -6,8 +6,13 @@ import React from 'react';
 // }
 
 //arrow syntax as ES6 coding standard
-const FunctionComponent = () => <h1>Hello Everyone, This is Functional component example..</h1>
-
-
+const FunctionComponent = (props) => {
+    return (
+        <div>
+            <h1>Hello {props.heroName} a.k.a {props.name}, This is Functional component example with props and children..</h1>
+            { props.children }
+        </div>
+    )
+}
 
 export default FunctionComponent;

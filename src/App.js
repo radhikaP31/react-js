@@ -8,9 +8,17 @@ import JSXClass from './components/JSXClass';
 function App() {
   return (
     <div className="App">
-      {/* <FunctionComponent />
-      <ClassComponent /> */}
-      <JSXClass/>
+      <FunctionComponent name="Peater" heroName="Spiderman">
+        <p>Spiderman is a marvel hero.</p>
+      </FunctionComponent>
+      <FunctionComponent name="Brush" heroName="Batman">
+        <button> Click here to be a Batman </button>
+      </FunctionComponent>
+      <FunctionComponent name="Tony" heroName="Ironman"/>
+      <ClassComponent name="Peater" heroName="Spiderman" />
+      <ClassComponent name="Brush" heroName="Batman" />
+      <ClassComponent name="Tony" heroName="Ironman" />
+      {/* <JSXClass/> */}
     </div>
   );
 }
