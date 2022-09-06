@@ -8,12 +8,14 @@ import StateComponent from './components/StateComponent';
 import SetState from './components/SetState';
 import EventHandling from './components/EventHandling';
 import EventHandlingInClassComponent from "./components/EventHandlingInClassComponent";
+import ArrayMap from "./components/ArrayMap";
 
 function App() {
   return (
     <div className="App">
-      <EventHandling />
-      <EventHandlingInClassComponent />
+      <ArrayMap />
+      {/* <EventHandling /> */}
+      {/* <EventHandlingInClassComponent /> */}
       {/* <SetState/> */}
       {/* <StateComponent/> */}
       {/* <FunctionComponent name="Peater" heroName="Spiderman">
