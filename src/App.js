@@ -9,11 +9,13 @@ import SetState from './components/SetState';
 import EventHandling from './components/EventHandling';
 import EventHandlingInClassComponent from "./components/EventHandlingInClassComponent";
 import ArrayMap from "./components/ArrayMap";
+import FormControl from './components/FormControl';
 
 function App() {
   return (
     <div className="App">
-      <ArrayMap />
+      <FormControl/>
+      {/* <ArrayMap /> */}
       {/* <EventHandling /> */}
       {/* <EventHandlingInClassComponent /> */}
       {/* <SetState/> */}
