@@ -1,9 +1,8 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
-import About from './pages/About';
 import ProductsPage from './pages/ProductsPage';
 import Cart from './pages/Cart';
 import SingleProduct from './pages/SingleProduct';
@@ -16,7 +15,7 @@ function App() {
   useEffect(() => {
 
     getCart().then(cart => {
-      if (Object.keys(JSON.parse(cart)).length != 0) {//check object length then setCart
+      if (Object.keys(JSON.parse(cart)).length !== 0) {//check object length then setCart
         setCart(JSON.parse(cart));
       }
     });
@@ -33,7 +32,6 @@ function App() {
         <Navigation/>
         <Routes>
           <Route exact path='/' element={<Home />}></Route>
-          {/* <Route exact path='/about' element={<About />}></Route> */}
           <Route exact path='/products' element={<ProductsPage />}></Route>
           <Route exact path="/products/:_id" element={<SingleProduct />}></Route>
           <Route exact path='/cart' element={<Cart />}></Route>
